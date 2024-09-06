@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+echo "Make a script to automatically connect to your AWS machine with one click!"
+echo "Made by zain :)"
+
+echo ""
+echo ""
+
+read -p "Drag your .pem (key) file to this window and hit enter: " path
+read -p "Copy and paste your public IP address for your AWS machine and hit enter: " ip
+
+chmod 600 $path
+
+echo "#!/usr/bin/env bash
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+cd ..
+ssh -i $path ec2-user@$ip" > $HOME/Desktop/LAUNCH-AWS.sh
+
+chmod +x $HOME/Desktop/LAUNCH-AWS.sh
+echo "Shortcut generated on your Desktop! Double click on the LAUNCH-AWS.sh file to automatically
+log in to your AWS machine"
+
+read -p "Press Enter to quit..."
+exit 0
