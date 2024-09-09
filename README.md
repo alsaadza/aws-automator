@@ -1,7 +1,7 @@
 
 # AWS Automator
 
-Connect to your AWS machine in just one click!
+Connect to your AWS machine in just one click.
 
 
 
